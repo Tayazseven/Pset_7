@@ -1,0 +1,50 @@
+---
+title: "Problem set 7"
+Author: "Ayazseven_tug51373"
+output: html_notebook
+---
+#Q1. 
+vecs = c(1,2,3,4,5)
+length(vecs)
+#part b
+rnge = 2:11
+rnge
+#part c
+numeric(22) #numeric function makes vectors of 0s
+
+##Question 2
+#Part a
+v1 = c(3,6,7,3,1)
+v2 = c(6,3,0,6,1)
+#part b # I expect R to calculate the instructed operations by elements i.e: v1[1] + v2[1], v1[2]+v2[2] etc....
+v1 + v2
+v1 * v2
+v1 - v2
+v1/v2 
+#part c 
+# Exponentiation
+v1^2
+sqrt(v2)
+log(v2)
+#Results are expected; it operates as item by item in vectors. 0's log seems infinite
+#####
+##Q3
+#Part a I predict 55
+v1 %*% v2 # I get 55
+#part b
+matrx = matrix(c(3,7, 6,1), nrow=2, ncol=2)
+#matrx
+vec_q3 = c(3,1)
+matrx%*%vec_q3
+vec_q3%*%matrx
+
+##Q4
+#Part C
+f_q6 = fread("pset6_q4.txt")
+#PartD
+lfchange = log2(f_q6[,by_expression]/f_q6[,rm_expression])
+#lfchange
+#Part e I couldn't find it
+#Part f Fatal error
+
+
